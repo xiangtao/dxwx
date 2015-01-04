@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	
+	<properties resource="my/utils/generator/generatorConfig.properties" />
+	
+	<context id="MBG" targetRuntime="MyBatis3">
+	
+		<plugin type="my.utils.generator.GeneratorMysqlPagePlugin"></plugin>
+		
+		<plugin type="my.utils.generator.GeneratorServiceLayerPlugin"></plugin>
+	
+        <commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		
+		<jdbcConnection driverClass="${driverClass}" 
+				connectionURL="${connectionURL}" 
+				userId="${userName}" password="${password}"/>
+		
+		<javaTypeResolver >
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		
+		<javaModelGenerator targetPackage="${modelPackage}" targetProject="${targetProject}">	<!-- 实体类 -->
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		
+		<sqlMapGenerator targetPackage="${sqlMapperPackage}" targetProject="${targetProject}">	<!-- 实体类SQL映射文件 -->
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		
+		<javaClientGenerator type="XMLMAPPER" targetPackage="${daoMapperPackage}" targetProject="${targetProject}">
+			<property name="enableSubPackages" value="true" />									<!-- 接口 -->
+		</javaClientGenerator>
+		
+		<table schema="test" tableName="${tableName}" domainObjectName="${domainObjectName}">
+		</table>
+		 
+	</context>
+	
+</generatorConfiguration>

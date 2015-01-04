@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" default-lazy-init="true">
+    
+    <!-- 启用状态标识 -->
+	<bean id="enableStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="1" value="启用"/>
+    			<entry key="0" value="未启用"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="enableHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.1}'>启用</font>]]></value></entry>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.2}'>未启用</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 启用状态标识 -->
+	<bean id="userTypeStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="1" value="管理员"/>
+    			<entry key="2" value="领读人"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="userTypeHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.1}'>管理员</font>]]></value></entry>
+    			<entry><key><value>2</value></key><value><![CDATA[<font color='${color.level.2}'>领读人</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 适合年龄 -->
+	<bean id="suitableAgeStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="不限"/>
+    			<entry key="1" value="10岁以下"/>
+    			<entry key="2" value="10-15岁"/>
+    			<entry key="3" value="15-25岁"/>
+    			<entry key="4" value="25-35岁"/>
+    			<entry key="5" value="35岁以上"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="suitableAgeHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>不限</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>10岁以下</font>]]></value></entry>
+    			<entry><key><value>2</value></key><value><![CDATA[<font color='${color.level.3}'>10-15岁</font>]]></value></entry>
+    			<entry><key><value>3</value></key><value><![CDATA[<font color='${color.level.4}'>15-25岁</font>]]></value></entry>
+    			<entry><key><value>4</value></key><value><![CDATA[<font color='${color.level.5}'>25-35岁</font>]]></value></entry>
+    			<entry><key><value>5</value></key><value><![CDATA[<font color='${color.level.6}'>35岁以上</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 适合性别 -->
+	<bean id="suitableSexStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="不限"/>
+    			<entry key="1" value="男"/>
+    			<entry key="2" value="女"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="suitableSexHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>不限</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>男</font>]]></value></entry>
+    			<entry><key><value>2</value></key><value><![CDATA[<font color='${color.level.3}'>女</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 文化水平 -->
+	<bean id="cultureLevelStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="不限"/>
+    			<entry key="1" value="小学及以下"/>
+    			<entry key="2" value="初中"/>
+    			<entry key="3" value="高中"/>
+    			<entry key="4" value="本科"/>
+    			<entry key="5" value="硕士及以上"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="cultureLevelHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>不限</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>小学及以下</font>]]></value></entry>
+    			<entry><key><value>2</value></key><value><![CDATA[<font color='${color.level.3}'>初中</font>]]></value></entry>
+    			<entry><key><value>3</value></key><value><![CDATA[<font color='${color.level.4}'>高中</font>]]></value></entry>
+    			<entry><key><value>4</value></key><value><![CDATA[<font color='${color.level.5}'>本科</font>]]></value></entry>
+    			<entry><key><value>5</value></key><value><![CDATA[<font color='${color.level.6}'>硕士及以上</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 阅读水平 -->
+	<bean id="readLevelStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="不限"/>
+    			<entry key="1" value="磕磕巴巴"/>
+    			<entry key="2" value="勉强通顺"/>
+    			<entry key="3" value="流畅朗读"/>
+    			<entry key="4" value="深情并茂"/>
+    			<entry key="5" value="大师水平"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="readLevelHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>不限</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>磕磕巴巴</font>]]></value></entry>
+    			<entry><key><value>2</value></key><value><![CDATA[<font color='${color.level.3}'>勉强通顺</font>]]></value></entry>
+    			<entry><key><value>3</value></key><value><![CDATA[<font color='${color.level.4}'>流畅朗读</font>]]></value></entry>
+    			<entry><key><value>4</value></key><value><![CDATA[<font color='${color.level.5}'>深情并茂</font>]]></value></entry>
+    			<entry><key><value>5</value></key><value><![CDATA[<font color='${color.level.6}'>大师水平</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 文献分类状态 -->
+	<bean id="categoryStatusStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="屏蔽"/>
+    			<entry key="1" value="正常"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="categoryStatusHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>屏蔽</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>正常</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 标兵选择 -->
+	<bean id="standardChoiceTypeStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="系统选择"/>
+    			<entry key="1" value="发布人选择"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="standardChoiceTypeHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>系统选择</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>发布人选择</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 是否置顶 -->
+	<bean id="isTopStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="不置顶"/>
+    			<entry key="1" value="置顶"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="isTopHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>不置顶</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>置顶</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 是否置顶 -->
+	<bean id="isPublishStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="未发布"/>
+    			<entry key="1" value="已发布"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="isPublishHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>未发布</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>已发布</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 录音状态 -->
+	<bean id="audioStatusStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="-1" value="屏蔽"/>
+    			<entry key="0" value="未置顶"/>
+    			<entry key="1" value="置顶"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="audioStatusHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+   				<entry><key><value>-1</value></key><value><![CDATA[<font color='${color.level.1}'>屏蔽</font>]]></value></entry>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.2}'>不置顶</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.3}'>置顶</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+ 	
+    <!-- 是否为阅读标兵 -->
+	<bean id="isReadStandardStr" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry key="0" value="否"/>
+    			<entry key="1" value="是"/>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+	<bean id="isReadStandardHtml" class="java.util.LinkedHashMap">
+  		<constructor-arg>
+   			<map>
+    			<entry><key><value>0</value></key><value><![CDATA[<font color='${color.level.1}'>否</font>]]></value></entry>
+    			<entry><key><value>1</value></key><value><![CDATA[<font color='${color.level.2}'>是</font>]]></value></entry>
+   			</map>
+  		</constructor-arg>
+ 	</bean>
+</beans>
