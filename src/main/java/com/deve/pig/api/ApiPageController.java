@@ -11,6 +11,14 @@ import com.deve.pig.controller.BaseController;
 @RequestMapping("/api/dxwx")
 @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class ApiPageController extends BaseController{
-
+   
+	@RequestMapping("/showView")
+	public String showView(){
+		return "api/cgview";
+	}
 	
+	@RequestMapping("/showIntro")
+	public String showIntro(){
+		return "api/cgintroduce";
+	}
 }
