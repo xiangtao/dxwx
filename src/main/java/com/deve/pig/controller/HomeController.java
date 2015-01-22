@@ -23,7 +23,7 @@ import com.deve.pig.model.Priv;
 import com.deve.pig.service.manager.IPrivService;
 
 
-@Controller
+//@Controller
 @RequestMapping("/")
 public class HomeController extends BaseController{
 	

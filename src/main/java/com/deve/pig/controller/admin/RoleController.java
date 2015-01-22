@@ -35,7 +35,7 @@ import com.deve.pig.service.manager.IRoleService;
  *@Since:2012-6-20
  *@Version:1.1.0
  */
-@Controller
+//@Controller
 @RequestMapping("/role")
 public class RoleController extends BaseController{
 

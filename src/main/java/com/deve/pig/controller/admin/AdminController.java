@@ -25,7 +25,7 @@ import com.deve.pig.service.manager.IAdminService;
 import com.deve.pig.service.manager.IRoleService;
 
 
-@Controller
+//@Controller
 @RequestMapping("/account")
 public class AdminController extends BaseController{
 

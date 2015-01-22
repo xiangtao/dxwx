@@ -16,7 +16,7 @@ import com.deve.pig.model.Admin;
 import com.deve.pig.service.manager.IAdminService;
 import com.deve.pig.service.manager.IRolePrivilegeService;
 
-@Controller
+//@Controller
 @RequestMapping("/login")
 public class LoginController extends BaseController{
 	

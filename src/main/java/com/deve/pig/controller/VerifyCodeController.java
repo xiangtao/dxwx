@@ -15,7 +15,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+//@Controller
 @RequestMapping("/verify")
 public class VerifyCodeController extends BaseController{
 	

@@ -23,7 +23,7 @@ import com.deve.pig.model.PrivExample;
 import com.deve.pig.model.PrivExample.Criteria;
 import com.deve.pig.service.manager.IPrivService;
 
-@Controller
+//@Controller
 @RequestMapping("/priv")
 public class PrivController extends BaseController{
 

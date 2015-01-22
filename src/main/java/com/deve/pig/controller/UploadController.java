@@ -31,7 +31,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
  * 文件上传控制器
  * @author taox
  */
-@Controller
+//@Controller
 @RequestMapping("/upload")
 public class UploadController extends BaseController{
 	

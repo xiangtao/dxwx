@@ -20,13 +20,12 @@ public class JacksonUtil {
 		objectMapper.configure(JsonParser.Feature.ALLOW_SINGLE_QUOTES,true);
 		//{no:'2892',ck:'11',type:'出库',operator:'admin',tms:[{tm:'0009842250832',num:2},{tm:'0002412766040',num:1}]}
 		Map<String, Object> maps = objectMapper.readValue(jsonStr, Map.class);
-		System.out.println(maps.size());  
-		Set<String> key = maps.keySet();  
+		/*Set<String> key = maps.keySet();  
 		Iterator<String> iter = key.iterator();  
 		while (iter.hasNext()) {
 			String field = iter.next();  
 			System.out.println(field + ":" + maps.get(field));  
-		}
+		}*/
 		return maps;
 	}
 	
